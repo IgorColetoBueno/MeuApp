@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MeuApp"
+             x:Class="MeuApp.MainPage"
+             Title="Meu primeiro app Xamarin">
+
+    <StackLayout>
+        <Slider
+            x:Name="MeuSlider1"
+            Minimum="0"
+            Maximum="300"            
+            ValueChanged="MeuSlider1_ValueChanged"/>
+        <Slider
+            x:Name="MeuSlider2"
+            Minimum="0"
+            Maximum="500"            
+            ValueChanged="MeuSlider2_ValueChanged"
+            />
+        <Label
+                x:Name="MeuLabel"
+                FontSize="Large"
+                TextColor="CadetBlue"
+                FontAttributes="Bold"
+                Text="0"
+                />
+    </StackLayout>
+
+</ContentPage>
